@@ -27,7 +27,7 @@ CONTACTS_CSV = ROOT / "data" / "contacts.csv"                # Apollo fallback (
 # Step 7: Gmail. Case rule: the To: address is hardcoded to your own inbox.
 GMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS", "")
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "")
-TO_ADDRESS = os.getenv("TO_ADDRESS", "ravi_bussareddy@pg27.mesaschool.co")
+TO_ADDRESS = os.getenv("TO_ADDRESS", "")       # set in .env: your own inbox
 SENDER_NAME = os.getenv("SENDER_NAME", "Ravi")
 
 # Step 3: qualification

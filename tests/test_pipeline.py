@@ -2,6 +2,7 @@ import os
 
 os.environ["OFFLINE"] = "1"
 os.environ["DRY_RUN"] = "1"
+os.environ["TO_ADDRESS"] = "tester@test.local"
 
 import run  # noqa: E402
 from pipeline import config, contacts, draft, qualify  # noqa: E402

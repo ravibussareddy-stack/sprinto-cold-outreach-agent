@@ -108,6 +108,8 @@ def main():
     ap.add_argument("domains", nargs="*")
     ap.add_argument("--domains", dest="file", default="data/domains.txt")
     a = ap.parse_args()
+    if not config.TO_ADDRESS or config.TO_ADDRESS.endswith("@example.com"):
+        raise SystemExit("Set TO_ADDRESS in .env to your own email (case rule: all mail goes to you).")
     domains = a.domains or [l.split("#")[0].strip() for l in Path(a.file).read_text().splitlines()]
     domains = [d for d in domains if d]
 
