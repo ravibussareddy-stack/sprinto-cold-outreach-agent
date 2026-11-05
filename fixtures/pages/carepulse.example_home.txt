@@ -1,0 +1,3 @@
+CarePulse - Remote patient monitoring for hospitals
+CarePulse is a SaaS platform that lets hospital care teams monitor patients after discharge.
+Series A funded, 70 employees, serving 25 hospital networks in the US and India.

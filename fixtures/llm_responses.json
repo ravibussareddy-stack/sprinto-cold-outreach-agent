@@ -1,0 +1,359 @@
+{
+ "extract_home": {
+  "ledgerloop.example": {
+   "company": "LedgerLoop",
+   "one_liner": "Loan reconciliation and collections reporting software for lenders",
+   "is_b2b_saas": true,
+   "industry": "fintech",
+   "funding_stage": "Series B",
+   "employees": 150,
+   "customer_types": [
+    "banks",
+    "NBFCs",
+    "enterprise"
+   ],
+   "regions": [
+    "India",
+    "Singapore"
+   ],
+   "certifications_held": [],
+   "compliance_signals": [
+    "enterprise banking customers now require a SOC 2 Type II report before signing",
+    "security team has started audit readiness"
+   ]
+  },
+  "shipwise.example": {
+   "company": "Shipwise",
+   "one_liner": "Real-time shipment tracking software for logistics teams",
+   "is_b2b_saas": true,
+   "industry": "logistics",
+   "funding_stage": null,
+   "employees": null,
+   "customer_types": [
+    "mid-market",
+    "retail enterprises"
+   ],
+   "regions": [
+    "India",
+    "Middle East"
+   ],
+   "certifications_held": [],
+   "compliance_signals": [
+    "Large retail customers have asked us for ISO 27001 certification as part of procurement"
+   ]
+  },
+  "carepulse.example": {
+   "company": "CarePulse",
+   "one_liner": "Remote patient monitoring software for hospital care teams",
+   "is_b2b_saas": true,
+   "industry": "healthtech",
+   "funding_stage": "Series A",
+   "employees": 70,
+   "customer_types": [
+    "hospital networks"
+   ],
+   "regions": [
+    "US",
+    "India"
+   ],
+   "certifications_held": [],
+   "compliance_signals": []
+  },
+  "brewbarn.example": {
+   "company": "BrewBarn",
+   "one_liner": "Specialty coffee roaster with cafes and an online shop",
+   "is_b2b_saas": false,
+   "industry": "food and beverage retail",
+   "funding_stage": null,
+   "employees": 60,
+   "customer_types": [
+    "consumers"
+   ],
+   "regions": [
+    "India"
+   ],
+   "certifications_held": [],
+   "compliance_signals": []
+  },
+  "tinyform.example": {
+   "company": "TinyForm",
+   "one_liner": "Form builder for freelancers and creators",
+   "is_b2b_saas": true,
+   "industry": "productivity",
+   "funding_stage": "Seed",
+   "employees": 6,
+   "customer_types": [
+    "freelancers",
+    "creators"
+   ],
+   "regions": [],
+   "certifications_held": [],
+   "compliance_signals": []
+  }
+ },
+ "qualify_0": {
+  "ledgerloop.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "cloud subscription platform that automates loan reconciliation"
+    },
+    "stage_fit": {
+     "met": true,
+     "evidence": "raised our Series B in 2026 and now have 150 employees"
+    },
+    "compliance_trigger": {
+     "met": true,
+     "evidence": "enterprise banking customers now require a SOC 2 Type II report before signing"
+    },
+    "enterprise_motion": {
+     "met": true,
+     "evidence": "Trusted by 40 banks and lending institutions"
+    }
+   },
+   "next_page": null,
+   "next_page_reason": null
+  },
+  "shipwise.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "B2B subscription software that gives logistics teams real-time shipment tracking"
+    },
+    "stage_fit": {
+     "met": null,
+     "evidence": null
+    },
+    "compliance_trigger": {
+     "met": true,
+     "evidence": "Large retail customers have asked us for ISO 27001 certification as part of procurement"
+    },
+    "enterprise_motion": {
+     "met": true,
+     "evidence": "Used by 30 mid-market shippers"
+    }
+   },
+   "next_page": "about",
+   "next_page_reason": "Funding stage and headcount are not on the home page; the about page usually states them"
+  },
+  "carepulse.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "CarePulse is a SaaS platform that lets hospital care teams monitor patients"
+    },
+    "stage_fit": {
+     "met": true,
+     "evidence": "Series A funded, 70 employees"
+    },
+    "compliance_trigger": {
+     "met": null,
+     "evidence": null
+    },
+    "enterprise_motion": {
+     "met": true,
+     "evidence": "serving 25 hospital networks in the US and India"
+    }
+   },
+   "next_page": "security",
+   "next_page_reason": "Healthcare SaaS selling to US hospitals almost always faces HIPAA and security reviews; the security page should confirm whether that pressure exists"
+  },
+  "brewbarn.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": false,
+     "evidence": "roasts and sells specialty coffee through 12 cafes in Pune and an online shop"
+    },
+    "stage_fit": {
+     "met": null,
+     "evidence": null
+    },
+    "compliance_trigger": {
+     "met": null,
+     "evidence": null
+    },
+    "enterprise_motion": {
+     "met": false,
+     "evidence": "Subscribe to our monthly bean box"
+    }
+   },
+   "next_page": null,
+   "next_page_reason": "Not a software company; no page will change that"
+  },
+  "tinyform.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "subscription form builder for freelancers and creators"
+    },
+    "stage_fit": {
+     "met": false,
+     "evidence": "seed stage startup ... team of 6"
+    },
+    "compliance_trigger": {
+     "met": null,
+     "evidence": null
+    },
+    "enterprise_motion": {
+     "met": null,
+     "evidence": null
+    }
+   },
+   "next_page": "about",
+   "next_page_reason": "Check who their customers are and whether any business buyers are asking for security assurances"
+  }
+ },
+ "pains": {
+  "ledgerloop.example": {
+   "pain_points": [
+    {
+     "pain": "Bank deals waiting on a SOC 2 Type II report that is months away",
+     "why_this_person": "As Head of Information Security, Priya owns the audit timeline that sales is now blocked on",
+     "evidence": "enterprise banking customers now require a SOC 2 Type II report before signing"
+    },
+    {
+     "pain": "Manual evidence collection for a Type II observation window across a 150-person company",
+     "why_this_person": "A small security team has to chase screenshots and access reviews across every department",
+     "evidence": "security team has started audit readiness"
+    }
+   ],
+   "hook": "LedgerLoop's bank customers now want a SOC 2 Type II report before they sign"
+  },
+  "shipwise.example": {
+   "pain_points": [
+    {
+     "pain": "Retail procurement deals stalled until ISO 27001 is in hand",
+     "why_this_person": "As founder and CEO of a 45-person company, Meera feels every stalled deal in revenue and runway",
+     "evidence": "Large retail customers have asked us for ISO 27001 certification as part of procurement"
+    },
+    {
+     "pain": "No one in-house who has run an ISO 27001 project before",
+     "why_this_person": "At 45 people there is no security team, so the founder ends up owning certification",
+     "evidence": "Series A company with 45 people"
+    }
+   ],
+   "hook": "Shipwise's retail customers asking for ISO 27001 as part of procurement"
+  },
+  "carepulse.example": {
+   "pain_points": [
+    {
+     "pain": "Running a first SOC 2 audit and a HIPAA assessment in the same year",
+     "why_this_person": "As CTO of a 70-person company without a dedicated security team, Anil's engineers will do the control work and evidence collection",
+     "evidence": "preparing for our first SOC 2 audit and HIPAA assessment this year"
+    },
+    {
+     "pain": "Hospital security questionnaires eating engineering time on every deal",
+     "why_this_person": "Questionnaires get routed to the CTO because only engineering can answer them",
+     "evidence": "Hospital customers send us detailed security questionnaires during procurement"
+    }
+   ],
+   "hook": "CarePulse is preparing for its first SOC 2 audit and a HIPAA assessment this year"
+  }
+ },
+ "draft": {
+  "ledgerloop.example": {
+   "subject": "SOC 2 Type II before the next bank signs",
+   "body": "Hi Priya,\n\nSaw that LedgerLoop's bank customers now want a SOC 2 Type II report before they sign. That puts your audit timeline directly on the sales critical path.\n\nThe slow part of Type II is usually evidence: months of access reviews, screenshots and policy sign-offs across 150 people. Sprinto connects to your cloud, HR and code tools and collects that evidence continuously, so the observation window runs itself and your team reviews instead of chasing.\n\nWorth a 15-minute look at how that would map to your current readiness plan?\n\nRavi"
+  },
+  "shipwise.example": {
+   "subject": "ISO 27001 for Shipwise's retail deals",
+   "body": "Hi Meera,\n\nNoticed that Shipwise's large retail customers are asking for ISO 27001 as part of procurement. At 45 people, that usually lands on the founder's desk with no one in-house who has done it before.\n\nSprinto gives you the policies, risk register and control monitoring ISO 27001 needs out of the box, and collects audit evidence from your existing tools, so you can get certified without hiring a compliance team or pulling engineers off the roadmap.\n\nWould a 15-minute walkthrough be useful before your next procurement review?\n\nRavi"
+  },
+  "carepulse.example": {
+   "subject": "SOC 2 and HIPAA in the same year",
+   "body": "Hi Anil,\n\nSaw on your security page that CarePulse is preparing for its first SOC 2 audit and a HIPAA assessment this year, while hospital questionnaires keep coming in on every deal.\n\nMost of that work overlaps. Sprinto maps one set of controls to both SOC 2 and HIPAA, collects evidence automatically from your cloud and code tools, and gives you a trust page to answer questionnaires, so your engineers are not pulled off the product twice.\n\nOpen to a 15-minute look at how teams your size run both together?\n\nRavi"
+  }
+ },
+ "extract_about": {
+  "shipwise.example": {
+   "company": "Shipwise",
+   "funding_stage": "Series A",
+   "employees": 45,
+   "customer_types": [
+    "enterprise"
+   ],
+   "compliance_signals": []
+  },
+  "tinyform.example": {
+   "customer_types": [
+    "solo creators"
+   ]
+  }
+ },
+ "qualify_1": {
+  "shipwise.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "B2B subscription software that gives logistics teams real-time shipment tracking"
+    },
+    "stage_fit": {
+     "met": true,
+     "evidence": "Shipwise is a Series A company with 45 people"
+    },
+    "compliance_trigger": {
+     "met": true,
+     "evidence": "Large retail customers have asked us for ISO 27001 certification as part of procurement"
+    },
+    "enterprise_motion": {
+     "met": true,
+     "evidence": "help mid-market and enterprise shippers"
+    }
+   },
+   "next_page": null,
+   "next_page_reason": null
+  },
+  "carepulse.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "CarePulse is a SaaS platform that lets hospital care teams monitor patients"
+    },
+    "stage_fit": {
+     "met": true,
+     "evidence": "Series A funded, 70 employees"
+    },
+    "compliance_trigger": {
+     "met": true,
+     "evidence": "preparing for our first SOC 2 audit and HIPAA assessment this year"
+    },
+    "enterprise_motion": {
+     "met": true,
+     "evidence": "serving 25 hospital networks in the US and India"
+    }
+   },
+   "next_page": null,
+   "next_page_reason": null
+  },
+  "tinyform.example": {
+   "criteria": {
+    "is_b2b_saas": {
+     "met": true,
+     "evidence": "subscription form builder for freelancers and creators"
+    },
+    "stage_fit": {
+     "met": false,
+     "evidence": "seed stage startup building a subscription form builder"
+    },
+    "compliance_trigger": {
+     "met": null,
+     "evidence": null
+    },
+    "enterprise_motion": {
+     "met": false,
+     "evidence": "Our customers are solo creators"
+    }
+   },
+   "next_page": null,
+   "next_page_reason": "Solo-creator customers do not demand certifications; more pages will not change the verdict"
+  }
+ },
+ "extract_security": {
+  "carepulse.example": {
+   "compliance_signals": [
+    "Hospital customers send us detailed security questionnaires during procurement",
+    "preparing for our first SOC 2 audit and HIPAA assessment this year"
+   ]
+  }
+ }
+}

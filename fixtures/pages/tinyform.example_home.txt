@@ -1,0 +1,3 @@
+TinyForm - Forms for indie creators
+TinyForm is a seed stage startup building a subscription form builder for freelancers and creators.
+We are a team of 6 and still in private beta with a waitlist.

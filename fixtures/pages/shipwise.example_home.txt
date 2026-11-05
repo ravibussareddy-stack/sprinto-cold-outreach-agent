@@ -1,0 +1,4 @@
+Shipwise - Shipment visibility for mid-market shippers
+Shipwise is B2B subscription software that gives logistics teams real-time shipment tracking and exception alerts.
+Large retail customers have asked us for ISO 27001 certification as part of procurement, and we need to get certified quickly.
+Used by 30 mid-market shippers across India and the Middle East.

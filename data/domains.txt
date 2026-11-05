@@ -1,0 +1,9 @@
+# One domain per line. '#' starts a comment.
+# These .example domains are fictional and run from fixtures/ when OFFLINE=1.
+# For a live run, replace with real domains, e.g. from a list of Series A-C SaaS companies.
+ledgerloop.example
+shipwise.example
+carepulse.example
+brewbarn.example
+tinyform.example
+deadlink.example

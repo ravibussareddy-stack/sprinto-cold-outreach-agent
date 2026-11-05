@@ -1,0 +1,5 @@
+LedgerLoop - Reconciliation software for lenders
+LedgerLoop is a cloud subscription platform that automates loan reconciliation and collections reporting for banks and NBFCs.
+We raised our Series B in 2026 and now have 150 employees across Bengaluru and Singapore.
+Our enterprise banking customers now require a SOC 2 Type II report before signing, and our security team has started audit readiness.
+Trusted by 40 banks and lending institutions. Book a demo.

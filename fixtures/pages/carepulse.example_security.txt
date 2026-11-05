@@ -1,0 +1,3 @@
+Security at CarePulse
+Hospital customers send us detailed security questionnaires during procurement and expect HIPAA compliance.
+We are preparing for our first SOC 2 audit and HIPAA assessment this year.
