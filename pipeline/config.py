@@ -14,7 +14,10 @@ DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 
 # LLM
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini")          # gemini | anthropic
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+# Several free-tier keys are rotated: GEMINI_API_KEY1..3, or a single GEMINI_API_KEY.
+GEMINI_API_KEYS = list(dict.fromkeys(
+    k for k in (os.getenv(n, "").strip() for n in
+                ["GEMINI_API_KEY1", "GEMINI_API_KEY2", "GEMINI_API_KEY3", "GEMINI_API_KEY"]) if k))
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")

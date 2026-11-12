@@ -29,16 +29,31 @@ def _parse(text):
     return json.loads(m.group(0))
 
 
+_dead_keys = set()  # keys that hit their quota this run; skipped from then on
+
+
 def _gemini(prompt):
     from google import genai
 
-    client = genai.Client(api_key=config.GEMINI_API_KEY)
-    resp = client.models.generate_content(
-        model=config.GEMINI_MODEL,
-        contents=prompt,
-        config={"temperature": config.TEMPERATURE, "response_mime_type": "application/json"},
-    )
-    return resp.text
+    keys = [k for k in config.GEMINI_API_KEYS if k not in _dead_keys]
+    if not keys:
+        raise LLMError("all Gemini API keys are out of quota or missing")
+    last = None
+    for key in keys:
+        try:
+            resp = genai.Client(api_key=key).models.generate_content(
+                model=config.GEMINI_MODEL,
+                contents=prompt,
+                config={"temperature": config.TEMPERATURE, "response_mime_type": "application/json"},
+            )
+            return resp.text
+        except Exception as e:
+            if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
+                _dead_keys.add(key)   # quota used up: try the next key
+                last = e
+                continue
+            raise
+    raise LLMError(f"Gemini quota exhausted on every key: {last}")
 
 
 def _anthropic(prompt):
